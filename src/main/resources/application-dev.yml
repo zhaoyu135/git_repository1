@@ -15,3 +15,5 @@ mybatis:
   #开启驼峰命名
   configuration:
     map-underscore-to-camel-case: true
+swagger:
+  enabled: true
