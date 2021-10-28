@@ -2,16 +2,7 @@ server:
   port: 8888
   servlet:
     context-path: /springboot
-jdbc:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://127.0.0.1:3306/numone-springboot?connectTimeout=10000&socketTimeout=10000&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
-  username: root
-  password: root321
-#mybatis的相关配置
-mybatis:
-  #mapper配置文件
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.example.git_repository.entity
-  #开启驼峰命名
-  configuration:
-    map-underscore-to-camel-case: true
+spring:
+  mongodb:
+    database: spitdb
+    host: 127.0.0.1

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 
-    @Value("${jdbc.url}")
+    @Value("${jdbc.url:url}")
     private String url;
 
 

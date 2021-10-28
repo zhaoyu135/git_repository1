@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 
     //是否开启swagger，正式环境一般是需要关闭的
-    @Value("${swagger.enabled}")
+    @Value("${swagger.enabled:true}")
     private boolean enableSwagger;
 
     @Bean
