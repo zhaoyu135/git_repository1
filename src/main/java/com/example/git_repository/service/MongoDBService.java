@@ -11,4 +11,5 @@ import java.util.List;
  */
 public interface MongoDBService {
     List<Spit> getALlSpit();
+    void save(Spit spit);
 }

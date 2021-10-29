@@ -25,4 +25,9 @@ public class MongodbServiceImpl implements MongoDBService {
     public List<Spit> getALlSpit() {
         return mongoTemplate.findAll(Spit.class);
     }
+
+    @Override
+    public void save(Spit spit) {
+        mongoTemplate.save(spit);
+    }
 }

@@ -25,7 +25,6 @@ public class MybatisController {
     @ApiOperation(value = "查询所有用户",notes = "查询")
     public List<SysUser> getAll(){
         return userService.getAllUser();
-
     }
 
 }

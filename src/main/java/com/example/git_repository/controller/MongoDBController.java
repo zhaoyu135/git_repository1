@@ -23,5 +23,16 @@ public class MongoDBController {
        return mongoDBService.getALlSpit();
     }
 
+    @GetMapping("save")
+    public void  save(){
+        Spit spit = new Spit();
+        spit.set_id("11111");
+        spit.setContent("222");
+        spit.setUserid("222");
+        spit.setVisits(222);
+        spit.setNickname("222");
+        mongoDBService.save(spit);
+    }
+
 
 }
